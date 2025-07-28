@@ -1,0 +1,32 @@
+auto-ballooning-streamlit/
+│
+├── app/
+│   ├── __init__.py
+│   ├── ocr_engine.py         # Advanced OCR with TrOCR and LayoutLMv3
+│   ├── extractor.py          # Dimension extraction with layout analysis
+│   ├── sym_detector.py       # YOLO-World for GD&T symbol detection
+│   ├── vl_parser.py          # Florence-2 + rule-based GD&T parsing
+│   ├── cad_parser.py         # DWG/DXF parsing with ezdxf
+│   ├── drawer.py             # Enhanced balloon drawing
+│   ├── report.py             # Multi-format report generation
+│   ├── streamlit_app.py      # Advanced Streamlit front-end
+│   ├── utils.py              # Helper functions with parallel processing
+│   └── config.yaml           # Updated configuration
+├── models/
+│   ├── yolo_world.pt        # YOLO-World weights
+│   ├── florence2_gdt.pkl    # Florence-2 weights
+│   └── trocr_base.pt        # TrOCR weights
+├── tests/
+│   ├── test_ocr.py          # OCR tests
+│   ├── test_extractor.py    # Dimension extraction tests
+│   ├── test_sym_detector.py # Symbol detection tests
+│   └── test_report.py       # Report generation tests
+├── data/
+│   └── synthetic/           # Synthetic training data
+├── requirements.txt          # Updated dependencies
+├── README.md                # Updated documentation
+├── setup.py                 # Packaging
+├── .gitignore               # Git ignore
+└── docker/
+    ├── Dockerfile           # Optimized Docker
+    └── docker-compose.yml   # Docker Compose
