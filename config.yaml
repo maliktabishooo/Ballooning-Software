@@ -1,0 +1,27 @@
+model_paths:
+  yolo: "models/yolo_world.pt"
+  florence: "models/florence2_gdt.pkl"
+  trocr: "models/trocr_base.pt"
+ocr:
+  engine: "trocr"
+  layout_model: "layoutlmv3"
+  languages: ["eng"]
+  max_text_regions: 100
+regex_patterns:
+  dimensions: "\\d+\\.?\\d*\\s*(mm|cm|in|m|°|deg|TYP|MAX|MIN|R|Ø|±\\d+\\.?\\d*)"
+  tolerances: "\\±\\d+\\.?\\d*"
+drawing:
+  balloon_radius: 12
+  balloon_color: "red"
+  gdt_frame_color: "blue"
+  font_size: 14
+report:
+  formats: ["csv", "excel", "pdf"]
+  output_dir: "reports"
+processing:
+  max_workers: 4
+  batch_size: 2
+cad:
+  supported_formats: ["dwg", "dxf"]
+cloud:
+  s3_bucket: "your-bucket-name"
