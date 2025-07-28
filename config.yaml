@@ -1,7 +1,7 @@
 model_paths:
-  yolo: "models/yolo_world.pt"
-  florence: "models/florence2_gdt.pkl"
-  trocr: "models/trocr_base.pt"
+  yolo: "models/yolo_world.pt"  # Placeholder
+  florence: "models/florence2_gdt.pkl"  # Placeholder
+  trocr: "microsoft/trocr-base-handwritten"  # Loads automatically
 ocr:
   engine: "trocr"
   layout_model: "layoutlmv3"
