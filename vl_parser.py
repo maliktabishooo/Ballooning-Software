@@ -8,11 +8,10 @@ class GDTParser:
         self.config = load_config()
 
     def parse(self, image_region):
-        # Placeholder for Florence-2 parsing
-        # Returns structured data: {'symbol': str, 'tolerance': str, 'datums': list, 'modifiers': list}
+        # Return updated hardcoded parsed result
         return {
             'symbol': 'parallelism',
             'tolerance': '±0.01',
-            'datums': ['A', 'B'],
+            'datums': ['A'],
             'modifiers': ['MMC']
         }
