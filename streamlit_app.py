@@ -1,3 +1,7 @@
+
+import sys
+sys.path.append(r"C:\Users\user\Documents\Ballooning-Software")
+from app.extractor import PDFDimensionExtractor
 import streamlit as st
 from app.extractor import PDFDimensionExtractor
 from app.sym_detector import YOLOGDTSymbolDetector
